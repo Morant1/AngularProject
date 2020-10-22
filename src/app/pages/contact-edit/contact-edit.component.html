@@ -1,0 +1,12 @@
+<div class="edit-container" *ngIf="contact">
+    <div class="edit-icons">
+    <img class="icon" src="assets/img/back.png" (click)="goBack()" />
+    <img *ngIf="contact._id" class="icon" src="assets/img/delete.png" (click)="onRemove()" />
+</div>
+    <div class="edit-inputs">
+        <input type="text" [(ngModel)]="contact.name" placeholder="Enter name...">
+        <input type="text" [(ngModel)]="contact.email" placeholder="Enter email..." required>
+        <input type="text" [(ngModel)]="contact.phone" placeholder="Enter phone...">
+        <button (click)="onSaveContact()">Save</button>
+    </div>
+</div>

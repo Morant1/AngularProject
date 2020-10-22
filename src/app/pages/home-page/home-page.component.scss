@@ -1,0 +1,31 @@
+.contacts-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #b3f5ef;
+
+    .user {
+        box-shadow: -0.5px -0.5px 3px #11112b;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 16px;
+
+        .initial-h {
+            font-family: cursive;
+            font-size: 1.2rem;
+            color: #eb1766d9;
+            
+        }
+    }
+}
+
+.icon {
+    width:23px;
+}
+
+.add-icon {
+    cursor:pointer;
+}

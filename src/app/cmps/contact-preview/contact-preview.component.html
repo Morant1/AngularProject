@@ -1,0 +1,5 @@
+<div class="contact-preview"  routerLink="/contact/{{contact._id}}">
+    <img class="edit-icon" routerLink="/contact/edit/{{contact._id}}" src="assets\img\edit.png"/>
+    <span>{{contact.name}}</span>
+    <img [src]="getImg"/>
+</div>

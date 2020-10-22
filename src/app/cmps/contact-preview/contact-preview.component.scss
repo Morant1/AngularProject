@@ -1,0 +1,41 @@
+.contact-preview {
+    border-radius: 16px;
+    cursor: pointer;
+    flex-direction: row-reverse;
+    display: flex;
+    width: 350px;
+    height: 50px;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff73;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: relative;
+
+    span {
+        color: black;
+        font-size: 1.4rem;
+        font-family: cursive;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: #d1e7fa;
+    }
+
+    img {
+        width: 45px;
+    }
+
+    .edit-icon {
+        width: 25px;
+        border-radius: 50%;
+        padding: 3px;
+        background-color: white;
+        border: 1px solid lightgrey;
+        margin-left: 10px;
+        cursor: pointer;
+       
+    }
+}

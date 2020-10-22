@@ -1,0 +1,16 @@
+<div class="contacts-app">
+    <div class="user" *ngIf="user">
+        <h2>Hello {{user.name}}</h2>
+        <h3><span class="initial-h">Coins: </span> {{user.coins}}
+            <img class="icon" src="assets\img\coins.png"/></h3>
+        <h4><span class="initial-h">BTC: </span>{{userBTC|number:'1.1-5'}}
+            <img class="icon" src="assets\img\bitcoin.png"/></h4>
+    </div>
+    <app-filter-contact (onFilter)="onFilterHandler($event)"></app-filter-contact>
+    <img class="add-icon" src="assets\img\plus.png" routerLink="/contact/edit"/>
+    <div>
+        <app-contact-list [contacts]="contacts"></app-contact-list>
+    </div>
+   
+
+</div>

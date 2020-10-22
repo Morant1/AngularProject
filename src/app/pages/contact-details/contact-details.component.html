@@ -1,0 +1,16 @@
+<div class="user-details" *ngIf="contact">
+
+    <div class="icons-container">
+        <img class="icon back" src="../../../assets/img/back.png" (click)="goBack()" />
+        <img class="icon" routerLink="/contact/edit/{{contact._id}}" src="assets\img\edit.png" />
+    </div>
+
+    <div class="txt"><span>Name: </span>{{contact.name}}</div>
+    <div class="txt"><span>Email: </span>{{contact.email}}</div>
+    <div class="txt"><span>Phone: </span>{{contact.phone}}</div>
+    <img [src]="getImg" />
+
+    <app-transfer-fund [currUser]="currUser" [contact]="contact" (transfer)="onTransferCoins($event)"
+    ></app-transfer-fund>
+
+</div>

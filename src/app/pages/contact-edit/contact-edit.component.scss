@@ -1,0 +1,52 @@
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .edit-inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        border:1px solid white;
+        padding:10px 20px;
+        input {
+            margin:5px;
+            outline: none;
+            padding:5px 10px;
+            background-color: transparent;
+            border-radius: 16px;
+            color:white;
+            border:1px solid lightblue;
+            text-align: center;
+
+        }
+
+        button {
+            margin:10px;
+            border-radius: 16px;
+            padding:0 5px;
+            background-color: transparent;
+            color:white;
+            border:1px solid white;
+            cursor: pointer;
+            &:hover {
+                background-color:lightblue;
+            }
+        }
+    }
+
+        .edit-icons{
+            display: flex;
+            margin-bottom: 10px;
+
+            .icon{
+                width: 30px;
+                cursor: pointer;
+            }
+        }
+
+
+    }

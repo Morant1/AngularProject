@@ -1,0 +1,39 @@
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", Tahoma;
+    background-color: #0304043d;
+
+    h3 {
+        color: #a4e9ff;
+        font-size: 1.8rem;
+    }
+
+    input {
+        padding: 10px 20px;
+        text-align: center;
+        outline: none;
+        color:white;
+        background-color: #00000042;
+        border: 1px solid white;
+        border-radius: 16px;
+    }
+
+    button {
+       background-color: transparent;
+       border:none;
+       color:white;
+       font-weight: 700;
+       cursor: pointer;
+       transition: all .3s;
+
+       &:hover {
+           border-bottom: 1px solid #f7015c;
+       }
+    }
+    & > * {
+        margin: 5px;
+    }
+}

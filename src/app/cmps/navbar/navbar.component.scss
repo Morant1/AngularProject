@@ -1,0 +1,52 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        cursor: pointer;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.8rem;
+        margin-left: 10px;
+        outline: none;
+
+        &:hover {
+            border: none;
+        }
+    }
+
+    .icon-home{
+        width:20px;
+    }
+
+    ul{
+        padding: 0;
+        display: flex;
+    li {
+        list-style-type: none;
+        cursor: pointer;
+        transition: all 3s;
+        font-size: 1.1rem;
+        margin: 10px;
+        color: white;
+        outline: none;
+
+        
+
+        &:hover {
+            color: #b3f5ef;
+            border-bottom: 1px solid  #b3f5ef;
+        }
+    }
+}
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .nav-container a {
+        margin: 8px;
+        font-size: 1rem;
+    }
+}

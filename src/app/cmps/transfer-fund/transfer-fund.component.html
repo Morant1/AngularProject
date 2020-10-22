@@ -1,0 +1,8 @@
+<div class="transfer-container">
+    <div><span>{{currUser.name}}</span>,you can trasform coins to {{contact.name}}</div>
+    <div>Available amount: {{currUser.coins}}<img  class="icon" src="assets/img/bitcoin.png"></div>
+    <div class="input-transfer">
+    <input type="number" [(ngModel)]="amount" placeholder="Search by name">
+    <button routerLink="/contact" (click)="transfer.emit(amount)">Transform</button>
+</div>
+</div>

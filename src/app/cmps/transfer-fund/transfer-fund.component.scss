@@ -1,0 +1,43 @@
+.transfer-container {
+    text-align: center;
+    color:lightblue;
+
+    .icon {
+        width:15px;
+        margin:2px;
+    }
+
+    span {
+        font-size: 1.4rem;
+        color:#7a00ff;
+    }
+    .input-transfer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    input {
+        padding: 10px;
+        outline: none;
+        color: white;
+        background-color: #1111114d;
+        text-align: center;
+        border: 1px solid lightgray;
+        border-radius: 16px;
+    }
+
+    button {
+        margin: 10px;
+        border-radius: 16px;
+        padding: 0 5px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+        &:hover {
+            background-color: lightblue;
+        }
+    }
+}
