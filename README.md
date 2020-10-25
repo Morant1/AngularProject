@@ -7,4 +7,4 @@ Run `json-server db.json --id=_id` for a dev server (backend side)
 
 Run `ng serve` for a dev server. (frontend side)
 
-Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Navigate to `http://localhost:4200/`.
